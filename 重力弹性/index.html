@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>重力弹性</title>
+	<style>
+		body
+		{
+			margin:0;
+		}
+
+		#up
+		{
+			position: absolute;
+			top:30px;
+			left: 50%;
+			opacity: 0.2;
+			width: 80px;
+			height: 50px;
+			line-height: 50px;
+			text-align: center;
+			cursor: pointer;
+		}
+
+		#down
+		{
+			position: absolute;;
+			bottom: 30px;
+			left: 50%;
+			opacity: 0.2;
+			width: 80px;
+			height: 50px;
+			line-height: 50px;
+			text-align: center;
+			cursor: pointer;
+		}
+
+		#up:hover
+		{
+			opacity: 0.6;
+		}
+		#down:hover
+		{
+			opacity: 0.6;
+		}
+	</style>
+</head>
+<body>
+	<div id = "up" onclick="Up()">UP</div>
+	<div id = "down" onclick="Down()">DOWN</div>
+	<canvas id = "canvas"></canvas>
+	<script src = "js2.js"></script>
+</body>
+</html>
